@@ -28,7 +28,6 @@ namespace CopyGroupPlugin
             transaction.Start("Копирование группы объектов");
             doc.Create.PlaceGroup(point, group.GroupType);
             transaction.Commit();
-
             return Result.Succeeded;
         }
     }
