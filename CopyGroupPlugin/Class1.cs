@@ -31,7 +31,6 @@ namespace CopyGroupPlugin
 
                 XYZ point = uiDoc.Selection.PickPoint("Выберите точку");
 
-
                 Room room2 = GetRoomByPoint(doc, point);
                 XYZ room2Center = GetElementCenter(room2);
                 XYZ point2 = room2Center + offset;
